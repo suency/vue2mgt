@@ -69,7 +69,7 @@ export default {
         return item.id == that.selectId
       }).json)*/
       var filterItem = _.find(that.tableData, (item) => {
-        return item.id == that.selectId
+        return item.id === that.selectId
       })
 
       that.jsonViewData = JSON.parse(filterItem.json)
