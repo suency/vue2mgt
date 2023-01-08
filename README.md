@@ -1,8 +1,47 @@
-## Management system based on vue2 and tp6
+<h1 align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/suency/vue2mgt/master/vue-0128/src/assets/logo.png" alt="GengCMS" width="100">
+  <br>
+  <br>
+  Geng CMS Chinese Version
+  <br>
+</h1>
 
-## install note:
+<h4 align="center">Using thinkphp 6 and VueJS 2 for the backend services</h4>
 
-******
+<p align="center">
+  <img src="https://badgen.net/badge/license/MIT/green" style="margin-right:-10px">
+  <img src="https://badgen.net/github/checks/node-formidable/node-formidable" style="margin-right:-10px">
+  <img src="https://badgen.net/badge/npm/8.19.2/blue" style="margin-right:-10px">
+  <img src="https://badgen.net/badge/node/v13.14.0/blue" style="margin-right:-10px">
+  <img src="https://badgen.net/badge/npm/passing/green" style="margin-right:-10px">
+  <img src="https://badgen.net/badge/chat/on%20discord/blue">
+</p>
+
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+</p>
+
+## Key Features
+
+* CMS features
+
+  * It is initial designed for Chinese CMS
+  * It is also can be used for any languages
+  * Backend thinkphp is similar to laravel php framework and it is very powerful
+
+* Dynamic router
+
+  - the menu is generated based on the data on database
+  - access control for different roles
+
+* Developed by vuejs2
+
+  
+
+## How To Use
 
 #### For vue install nodes:
 
@@ -76,7 +115,5 @@ ______
 #### Configure you database
 
 It's very easy. Just execute the sql file and change the database configuration in the backend configuration file.
-
-
 
 Done!!!
