@@ -19,10 +19,25 @@
 </p>
 
 <p align="center">
+  <a href="#screenshots">Screenshots</a> •
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#download">Download</a> •
 </p>
+
+
+
+## Screenshots
+
+
+
+![](https://raw.githubusercontent.com/suency/vue2mgt/master/screenshot/login.png)
+
+![](https://raw.githubusercontent.com/suency/vue2mgt/master/screenshot/content2.png)
+
+![](https://raw.githubusercontent.com/suency/vue2mgt/master/screenshot/content3.png)
+
+![](https://raw.githubusercontent.com/suency/vue2mgt/master/screenshot/content1.png)
 
 ## Key Features
 
@@ -58,6 +73,25 @@ to your .gitconfig in you ~path, and also you should include **package.json.lock
 3. The project is based on vue2 and many modules are old. There are no other methods to make it be new because it is very difficult to convert vue2 to vue3.
 4. Node version is v13.14.0, it's old.
 
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+``` bash
+# Clone this repository
+$ git clone https://github.com/suency/vue2mgt.git
+
+# It is for frontend vue pages
+# mgt-0218 is for backend services, you should configure it in your nginx
+$ cd vue-0218 
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
+```
+
+
+
 ______
 
 #### For backend install notes:
@@ -82,8 +116,11 @@ ______
        location ~ \.php/?.*$ {
            #跨域设置
            add_header Access-Control-Allow-Origin *;
-           add_header Access-Control-Allow-Methods GET,POST,OPTIONS;    
-           add_header Access-Control-Allow-Headers X-Requested-With;
+           #add_header Access-Control-Allow-Methods GET,POST,OPTIONS;    
+           #add_header Access-Control-Allow-Headers X-Requested-With;
+           add_header 'Access-Control-Allow-Methods' *;
+           add_header 'Access-Control-Allow-Credentials' 'true';
+           add_header 'Access-Control-Allow-Headers' *;
        
            root        /project_path/public;
            fastcgi_pass   127.0.0.1:9000;
@@ -107,7 +144,7 @@ ______
        }
    }
    ``````
-
+   
    
 
 ______
@@ -116,4 +153,8 @@ ______
 
 It's very easy. Just execute the sql file and change the database configuration in the backend configuration file.
 
-Done!!!
+
+
+## Download
+
+You can [download](https://github.com/suency/vue2mgt.git) the latest installable version of cms for Windows, macOS and Linux.
